@@ -1,0 +1,254 @@
+.home-wrapper {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 15px;
+    padding-bottom: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.city-label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    display: block;
+}
+
+.left-panel {
+    display: flex;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.current-weather-panel-full {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.current-weather-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.current-temp-display {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.weather-icon-large {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+}
+
+.current-day {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.weather-description {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.weather-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.detail-item p {
+    margin: 0;
+}
+
+.detail-item p:first-child {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.detail-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sunrise-sunset {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-forecast-card,
+.highlights-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.today-forecast-card h2,
+.highlights-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.today-forecast-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.chart-item {
+    text-align: center;
+}
+
+.chart-bar-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 40px;
+    margin: 0 auto 10px;
+}
+
+.chart-bar {
+    width: 15px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 5px;
+    transition: height 1s ease;
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--secondary-color);
+    position: relative;
+}
+
+.chart-bar-temp {
+    position: absolute;
+    top: -25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.chart-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.chart-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.highlight-item h4 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.highlight-value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.highlight-value span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search-bar {
+    grid-column: 1 / -1;
+    width: 50%;
+    margin:auto;
+}
+
+.react-select-container .react-select__control {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.react-select-container .react-select__single-value,
+.react-select-container .react-select__input {
+    color: var(--text-primary) !important;
+}
+
+.react-select-container .react-select__menu {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.react-select-container .react-select__option--is-focused {
+    background-color: var(--primary-color);
+}
+
+.react-select-container .react-select__option--is-selected {
+    background-color: var(--secondary-color);
+}
+
+.react-select-container .react-select__indicator-separator {
+    display: none;
+}
+
+.react-select-container .react-select__indicator {
+    color: var(--text-secondary);
+}
+
+.react-select-container .react-select__indicator:hover {
+    color: var(--text-primary);
+}

@@ -1,0 +1,87 @@
+.map-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.weather-map {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.map-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-controls h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.layer-button {
+    background-color: var(--bg-color-light);
+    color: var(--text-primary);
+    border: 1px solid var(--primary-color-faded);
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.layer-button:hover {
+    background-color: var(--primary-color-faded);
+}
+
+.layer-button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    flex-grow: 1;
+    border: 1px solid var(--primary-color-faded);
+    background-color: var(--bg-color-light);
+    color: var(--text-primary);
+    padding: 8px;
+    width: 79%;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+}
+
+.search-button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.city-weather-label {
+    color: var(--text-primary);
+}
+
+.city-weather-label b {
+    font-weight: bold;
+}

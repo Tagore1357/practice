@@ -1,0 +1,144 @@
+
+:root {
+  --bg-color-new: #1a1a2e;
+  --card-bg-new: #16213e;
+  --primary-color-new: #0f3460;
+  --secondary-color-new: #e94560;
+  --text-primary-new: #ffffff;
+  --text-secondary-new: #a8a8a8;
+}
+
+.solar-energy-page-new {
+  /* background-color: var(--bg-color-new); */
+  color: var(--text-primary-new);
+  min-height: 100vh;
+}
+
+.dashboard-header-new {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+.dashboard-header-new h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header-new p {
+  font-size: 1.1rem;
+  color: var(--text-secondary-new);
+}
+
+.dashboard-grid-new {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.chart-card-new {
+  background: var(--card-bg-new);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.chart-card-new:hover {
+    transform: translateY(-5px);
+}
+
+.chart-card-new h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--secondary-color-new);
+}
+
+.chart-container-new {
+  width: 100%;
+  height: 200px;
+}
+
+.progress-bar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.progress-bar-item-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 80px;
+}
+
+.progress-bar-item-new p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary-new);
+}
+
+.back-button {
+    background-color: var(--secondary-color-new);
+    color: var(--text-primary-new);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kpi-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.kpi-card {
+    background-color: var(--card-bg-new);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.kpi-card h4 {
+    color: var(--secondary-color-new);
+    margin-bottom: 1rem;
+}
+
+.kpi-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.kpi-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary-new);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .dashboard-grid-new {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header-new h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-header-new p {
+    font-size: 1rem;
+  }
+
+  .dashboard-grid-new, .kpi-cards-view {
+      padding: 1rem;
+  }
+}
